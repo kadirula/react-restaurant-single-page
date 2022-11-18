@@ -1,0 +1,26 @@
+.navbar{
+    padding: 2rem 0;
+    &__wrapper{
+        @include flex(center, space-between);
+    }
+    &__logo{
+        font-family: 'Allura', cursive;
+        font-size: 4rem;
+        color: $color-theme;
+    }
+    &__menu{
+        @include flex(center, unset);
+        gap: 2rem;
+        &-item{
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            font-weight: 500;
+            color: $color-black;
+            letter-spacing: .3rem;
+            transition: all .4s;
+            &:hover{
+                color: $color-theme;
+            }
+        }
+    }
+}
