@@ -1,0 +1,23 @@
+.topbar{
+    padding: 1rem 0;
+    background: $color-black;
+    opacity: .8;
+    &__wrapper{
+        @include flex(center, space-between);
+    }
+    &__info{
+        @include flex(center, unset);
+        gap: 2rem;
+        &-item{
+            @include flex(center, unset);
+            gap: 1rem;
+        }
+        &-icon{
+            color: $color-theme;
+        }
+        p{
+            color: $color-light-gray;
+            font-size: 1.2rem;
+        }
+    }
+}
