@@ -6,9 +6,13 @@
 @import './base/base';
 @import './base/typography';
 
-
+@import './layout/section';
 @import './layout/topbar';
 @import './layout/navbar';
 @import './layout/header';
 @import './layout/footer';
 
+@import './components/button';
+@import './components/slider';
+@import './components/about-card';
+@import './components/feature-card';

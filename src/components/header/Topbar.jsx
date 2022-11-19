@@ -1,6 +1,6 @@
 import { Container } from '@mui/material';
 
-import { AccessTime } from '@mui/icons-material'
+import { AccessTime, LocalPhoneOutlined, EmailOutlined } from '@mui/icons-material'
 
 const Topbar = () => {
   return (
@@ -19,11 +19,11 @@ const Topbar = () => {
           <div className="topbar__right">
             <div className="topbar__info">
               <div className="topbar__info-item">
-                <AccessTime className='topbar__info-icon' />
+                <LocalPhoneOutlined className='topbar__info-icon' />
                 <p>+1 801 4545 87</p>
               </div>
               <div className="topbar__info-item">
-                <AccessTime className='topbar__info-icon' />
+                <EmailOutlined className='topbar__info-icon' />
                 <p>info@info.com</p>
               </div>
             </div>

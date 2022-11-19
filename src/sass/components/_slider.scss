@@ -1,0 +1,97 @@
+.slider {
+    height: 100vh;
+    &__item {
+        @include flex(center, center);
+        position: relative;
+        &.swiper-slide-active .slider__image{
+            transform: scale(1.065);
+        }
+    }
+    &__image {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        transition: all 1.4s;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba($color-black, 0.4);
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__info {
+        padding: 2rem 4rem;
+        position: relative;
+        z-index: 2;
+        max-width: 700px;
+        text-align: center;
+        background: rgba($color-black, 0.4);
+    }
+    &__subtitle {
+        font-family: "Allura", cursive;
+        color: $color-theme;
+        font-size: 7rem;
+    }
+    &__title {
+        font-size: 7rem;
+        color: $color-text;
+        text-transform: uppercase;
+        letter-spacing: 0.3rem;
+        margin-bottom: 1.5rem;
+    }
+    &__desc {
+        font-size: 1.5rem;
+        letter-spacing: 0.2rem;
+        color: $color-light-gray;
+        text-transform: uppercase;
+    }
+    &__buttons {
+        margin: 2rem 0;
+        @include flex(center, center);
+        gap: 2rem;
+    }
+    
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        background-color: $color-theme;
+        width: 5rem;
+        height: 5rem;
+        &::after {
+            font-size: 2rem;
+            color: $color-text;
+            font-weight: 600;
+        }
+    }
+    .swiper-button-prev {
+        left: 0;
+    }
+    .swiper-button-next {
+        right: 0;
+    }
+
+    .swiper-pagination {
+        bottom: 5rem !important;
+    }
+    .swiper-pagination-bullet {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 0;
+        background: darken($color-light-gray, 30%);
+        opacity: 1;
+        &-active {
+            background: $color-theme;
+        }
+    }
+}

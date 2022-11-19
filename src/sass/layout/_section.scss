@@ -1,0 +1,27 @@
+.section{
+    padding: 6rem 0;
+}
+
+.section-about{
+    position: relative;
+    .left-image{
+        position: absolute;
+        top: 4rem;
+        left: 3rem;
+        transform: rotate(15deg);
+    }
+    .right-image{
+        position: absolute;
+        top: 4rem;
+        right: 3rem;
+        transform: rotate(-15deg);
+    }
+}
+
+.section-special{
+    background: url(../../assets/images/bg/special-menu-bg.jpg) no-repeat top center;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden;
+    position: relative;
+}

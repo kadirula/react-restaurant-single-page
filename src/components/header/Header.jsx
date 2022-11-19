@@ -1,15 +1,15 @@
 
-import React from 'react'
+import Box from '@mui/material/Box';
 
 /* Components */
-import { Navbar, Topbar } from './index';
+import { Navbar, Topbar } from '../index';
 
 const Header = () => {
     return (
-        <header className="header">
+        <Box className="header">
             <Topbar />
             <Navbar />
-        </header>
+        </Box>
     )
 }
 

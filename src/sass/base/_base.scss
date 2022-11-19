@@ -15,5 +15,13 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 1.6rem;
-    
+    background: url(../../assets/images/bg/body-bg.jpg) no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden;
 }
+
+.main{
+    min-height: 200vh;
+}
+

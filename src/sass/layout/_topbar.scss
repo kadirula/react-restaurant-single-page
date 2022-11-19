@@ -1,4 +1,6 @@
 .topbar{
+    position: relative;
+    z-index: 5;
     padding: 1rem 0;
     background: $color-black;
     opacity: .8;

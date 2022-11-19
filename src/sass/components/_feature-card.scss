@@ -1,0 +1,57 @@
+.feature-card {
+    @include flex(center, center);
+    gap: 3rem;
+    max-width: 800px;
+    margin: 0 auto;
+    &__item {
+        background-color: #2e2e31;
+        padding: 0 0;
+        border-radius: 0.5rem;
+        width: 33.3%;
+        position: relative;
+        overflow: hidden;
+    }
+    &__image {
+        text-align: center;
+        position: relative;
+        padding: 5rem 0;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            height: 80%;
+            width: 80%;
+            z-index: 2;
+            border: 1px solid white;
+        }
+        &:hover img{
+            animation: featureMove 1.3s normal;
+        }
+    }
+    &__text {
+        width: 100%;
+        height: 6rem;
+        background-color: $color-theme;
+        z-index: 0;
+        font-weight: 600;
+        color: $color-black;
+        @include flex(center, center);
+    }
+}
+
+
+@keyframes featureMove {
+    0%{
+        transform: translateY(-100px);
+    }
+    50%{
+        transform: translateY(0);
+    }
+    75%{
+        transform: translateY(-40px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}

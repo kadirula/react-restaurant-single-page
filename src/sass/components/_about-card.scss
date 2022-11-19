@@ -1,0 +1,15 @@
+.about-card{
+    margin: 7rem 0 4rem;
+    &__text{
+        text-align: center;
+        font-size: 1.8rem;
+        line-height: 1.7;
+        max-width: 80rem;
+        margin: 0 auto 3rem;
+        display: block;
+        color: $color-light-gray;
+        &--colored{
+            color: $color-theme;
+        }
+    }
+}

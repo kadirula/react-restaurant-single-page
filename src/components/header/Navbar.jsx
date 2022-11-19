@@ -1,9 +1,23 @@
 import { Container } from '@mui/material'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 const Navbar = () => {
+
+  const [sticky, setSticky] = useState(false)
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 10) {
+        setSticky(true);
+      }
+      else {
+        setSticky(false)
+      }
+    });
+  }, [])
+
   return (
-    <div className='navbar'>
+    <div className={`navbar ${sticky ? 'sticky' : ''}`}>
       <Container maxWidth='lg'>
         <div className="navbar__wrapper">
           <a href='/' className="navbar__logo">

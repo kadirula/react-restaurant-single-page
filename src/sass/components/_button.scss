@@ -1,0 +1,11 @@
+.button{
+    padding: 1.5rem 4rem;
+    border: .2rem solid $color-theme;
+    color: $color-theme;
+    font-weight: 600;
+    transition: all .4s;
+    &:hover{
+        background: $color-theme;
+        color: $color-text;
+    }
+}
