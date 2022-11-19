@@ -1,10 +1,10 @@
 .feature-card {
     @include flex(center, center);
     gap: 3rem;
-    max-width: 800px;
+    max-width: 750px;
     margin: 0 auto;
     &__item {
-        background-color: #2e2e31;
+        background-color: $color-dark-gray;
         padding: 0 0;
         border-radius: 0.5rem;
         width: 33.3%;

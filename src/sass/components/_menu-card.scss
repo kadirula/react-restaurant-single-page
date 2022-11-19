@@ -1,0 +1,73 @@
+.menu-card {
+    @include flex(center, unset);
+    gap: 3rem;
+
+    &__item {
+        position: relative;
+        width: 33.3%;
+        height: 600px;
+        &--flex {
+            position: relative;
+            @include flex(center, center);
+            flex-direction: column;
+        }
+        &--border::before {
+            content: "";
+            position: absolute;
+            left: 5%;
+            top: 5%;
+            width: 90%;
+            height: 90%;
+            border: 1px solid rgba($color-light-gray, 0.3);
+            z-index: 0;
+        }
+    }
+
+    &--text &__item {
+        background: $color-dark-gray;
+        text-align: center;
+        overflow: hidden;
+    }
+    &--text &__info {
+        padding: 0 3rem;
+        position: relative;
+        z-index: 5;
+    }
+    &--text img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &--text &__title {
+        font-size: 3.5rem;
+        color: $color-text;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    &--text &__discount {
+        background-color: $color-theme;
+        display: inline-block;
+        padding: 1rem 2rem;
+        margin: 2rem 0;
+        font-weight: 600;
+        font-size: 2rem;
+        color: $color-dark-gray;
+    }
+    &--text &__price {
+        @include flex(center, center);
+        font-size: 3rem;
+        color: $color-theme;
+        .discount {
+            font-size: 2.3rem;
+            margin-right: 1rem;
+            color: $color-light-gray;
+            text-decoration: line-through;
+        }
+    }
+    &--text &__desc {
+        margin: 2rem 0;
+        font-size: 1.7rem;
+        line-height: 1.6;
+        color: $color-light-gray;
+    }
+}

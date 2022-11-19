@@ -3,6 +3,7 @@
     border: .2rem solid $color-theme;
     color: $color-theme;
     font-weight: 600;
+    display: inline-block;
     transition: all .4s;
     &:hover{
         background: $color-theme;
