@@ -1,0 +1,14 @@
+.tabs{
+    .MuiTab-root{
+        background-color: $color-black;
+        color: $color-light-gray;
+        font-size: 1.6rem;
+        padding: 1rem 3rem;
+        margin: 0 1rem;
+        border-radius: .7rem;
+    }
+    .Mui-selected{  
+        background-color: $color-theme;
+        color: $color-black !important;
+    }
+}

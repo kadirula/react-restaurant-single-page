@@ -4,3 +4,6 @@ export { default as Navbar } from './header/Navbar';
 export { default as Slider } from './section/Slider';
 export { default as About } from './section/About';
 export { default as SpecialMenu } from './section/SpecialMenu';
+export { default as DeliciousMenu } from './section/DeliciousMenu';
+export { default as MenuTabs } from './menuTabs/MenuTabs';
+export { default as MenuTabPanel } from './menuTabs/MenuTabPanel';
