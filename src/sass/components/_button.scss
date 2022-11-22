@@ -1,12 +1,21 @@
-.button{
+.button {
     padding: 1.5rem 4rem;
-    border: .2rem solid $color-theme;
+    border: 0.2rem solid $color-theme;
     color: $color-theme;
     font-weight: 600;
     display: inline-block;
-    transition: all .4s;
-    &:hover{
+    cursor: pointer;
+    transition: all 0.4s;
+    &:hover {
         background: $color-theme;
         color: $color-text;
+    }
+    &--dark {
+        border: 0.2rem solid $color-black;
+        color: $color-black;
+        &:hover{
+            background: $color-black;
+        color: $color-text;
+        }
     }
 }
