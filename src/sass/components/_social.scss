@@ -1,0 +1,27 @@
+.social{
+    margin: 2rem 0 0;
+    @include flex(center, center);
+    gap: 2rem;
+    &__item{
+        text-decoration: none;
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: 50%;
+        border: .1rem solid rgba($color-light-gray, .6);
+        @include flex(center, center);
+        transition: all .4s;
+        &:hover{
+            background: $color-theme;
+            border-color: $color-theme;
+        }
+        &:hover .social__icon{
+            color: $color-text;
+        }
+    }
+    &__icon{
+        width: 2rem !important;
+        height: 2rem !important;
+        color: rgba($color-light-gray, .6);
+        transition: all .6s;
+    }
+}

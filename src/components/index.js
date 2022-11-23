@@ -12,3 +12,6 @@ export { default as MenuTabPanel } from './menuTabs/MenuTabPanel';
 export { default as GalleryFilter } from './gallery/GalleryFilter';
 export { default as GalleryItem } from './gallery/GalleryItem';
 export { default as FancyBox } from './fancyBox/FancyBox';
+export { default as Footer } from './footer/Footer';
+export { default as Subscribe } from './subscribe/Subscribe';
+export { default as Social } from './social/Social';

@@ -1,0 +1,35 @@
+.subscribe{
+    text-align: center;
+    &__desc{
+        color: $color-light-gray;
+        margin-bottom: 2rem;
+        font-size: 1.8rem;
+    }
+    &__form{
+        max-width: 60rem;
+        margin: 0 auto;
+        @include flex(center, space-between);
+        border: .2rem solid $color-light-gray;
+        input{
+            width: 100%;
+            padding: 1.5rem 1rem;
+            background-color: transparent;
+            border: 0;
+            color: $color-text;
+            &:focus{
+                outline: 0;
+            }
+        }
+        button{
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            color: $color-theme;
+            transform: rotate(-45deg);
+            svg{
+                height: 2rem;
+                width: 2rem;
+            }
+        }
+    }
+}
