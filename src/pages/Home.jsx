@@ -1,5 +1,5 @@
 import React from 'react'
-import { About, DeliciousMenu, Slider, SpecialMenu, PopularMenu } from '../components'
+import { About, DeliciousMenu, Slider, SpecialMenu, PopularMenu, Gallery } from '../components'
 
 const Home = () => {
     return (
@@ -9,6 +9,7 @@ const Home = () => {
             <SpecialMenu />
             <DeliciousMenu />
             <PopularMenu />
+            <Gallery />
         </>
     )
 }

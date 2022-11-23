@@ -3,6 +3,7 @@ import {
     Breakfast, Breakfast1, Breakfast2, Breakfast3, Breakfast4,
     Fastfood, Fastfood1, Fastfood2, Fastfood3, Fastfood4,
     Dinner, Dinner1, Dinner2, Dinner3, Dinner4,
+    Gallery1, Gallery2, Gallery3, Gallery4, Gallery5, Gallery6, Gallery7, Gallery8, Gallery9, Gallery10,
 } from './utils/imageImport';
 
 export const sliders = [
@@ -122,5 +123,48 @@ export const menuTabs = [
                 price: '$12'
             },
         ]
+    }
+]
+
+export const galleries = [
+    {
+        img: Gallery1,
+        filters: ['breakfast', 'lunch', 'fastfood']
+    },
+    {
+        img: Gallery2,
+        filters: ['fastfood', 'dinner']
+    },
+    {
+        img: Gallery3,
+        filters: ['breakfast']
+    },
+    {
+        img: Gallery4,
+        filters: ['lunch', 'dinner']
+    },
+    {
+        img: Gallery5,
+        filters: ['lunch']
+    },
+    {
+        img: Gallery6,
+        filters: ['dinner']
+    },
+    {
+        img: Gallery7,
+        filters: ['lunch', 'dinner', 'fastfood']
+    },
+    {
+        img: Gallery8,
+        filters: ['fastfood']
+    },
+    {
+        img: Gallery9,
+        filters: ['breakfast', 'lunch']
+    },
+    {
+        img: Gallery10,
+        filters: ['breakfast', 'fastfood']
     }
 ]
