@@ -1,9 +1,15 @@
 .pm-card {
     @include flex(center, space-between);
     gap: 4rem;
+    @include mobile(){
+        flex-direction: column;
+    }
     &__item {
         width: 33.3%;
         position: relative;
+        @include mobile(){
+            width: 100%;
+        }
         &::before{
             content: "";
             position: absolute;

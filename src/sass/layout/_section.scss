@@ -9,12 +9,18 @@
         top: 4rem;
         left: 3rem;
         transform: rotate(15deg);
+        @include tablet(){
+            display: none;
+        }
     }
     .right-image{
         position: absolute;
         top: 4rem;
         right: 3rem;
         transform: rotate(-15deg);
+        @include tablet(){
+            display: none;
+        }
     }
 }
 
@@ -36,4 +42,15 @@
 
 .section-gallery{
     
+}
+
+.MuiGrid-container{
+    @include tablet(){
+        width: 100% !important;
+    }
+}
+.MuiGrid-item{
+    @include tablet(){
+        padding-right: 16px;
+    }
 }

@@ -4,7 +4,7 @@
     max-width: 750px;
     margin: 0 auto;
     &__item {
-        background-color: $color-dark-gray;
+        background-color: rgba($color-dark-gray, .7);
         padding: 0 0;
         border-radius: 0.5rem;
         width: 33.3%;
@@ -37,6 +37,7 @@
         font-weight: 600;
         color: $color-black;
         @include flex(center, center);
+        text-align: center;
     }
 }
 

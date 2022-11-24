@@ -2,13 +2,11 @@
     padding: 2rem 0;
     z-index: 500;
     position: relative;
-    overflow: hidden;
     &.sticky {
         position: fixed;
         top: 0rem;
         width: 100%;
         height: max-content;
-       
     }
     &::before {
         content: "";
@@ -16,15 +14,16 @@
         height: 100%;
         position: absolute;
         left: 0;
-        top: -100%;
+        top: -200%;
         z-index: -1;
         background-color: #000;
-        transition: top .4s;
+        transition: top 0.4s;
     }
-    &.sticky::before{
+    &.sticky::before {
         top: 0;
     }
     &__wrapper {
+        position: relative;
         @include flex(center, space-between);
     }
     &__logo {
@@ -36,6 +35,25 @@
     &__menu {
         @include flex(center, unset);
         gap: 2rem;
+        @include mobile() {
+            position: absolute;
+            top: -100%;
+            left: 0;
+            width: 100%;
+            height: max-content;
+            flex-direction: column;
+            background: $color-black;
+            z-index: 30;
+            padding: 2rem 0;
+            opacity: 0;
+            z-index: -1;
+            transition: all 0.6s;
+            &.show {
+                top: 100%;
+                opacity: 1;
+                z-index: 1;
+            }
+        }
         &-item {
             font-size: 1.4rem;
             text-transform: uppercase;
@@ -45,12 +63,30 @@
             letter-spacing: 0.3rem;
             text-shadow: 4px 3px 5px $color-theme;
             transition: all 0.4s;
-            &.active{
-                color: $color-theme; 
+            &.active {
+                color: $color-theme;
             }
             &:hover {
                 color: $color-theme;
             }
         }
+    }
+    &__hamburger {
+        display: none;
+        color: $color-theme;
+        &-icon {
+            width: 4rem !important;
+            height: 4rem !important;
+        }
+        @include mobile() {
+            display: block;
+        }
+    }
+    &__mobile {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: max-content;
     }
 }

@@ -36,3 +36,10 @@ export { default as Gallery7 } from '../assets/images/gallery/gallery-7.png';
 export { default as Gallery8 } from '../assets/images/gallery/gallery-8.png';
 export { default as Gallery9 } from '../assets/images/gallery/gallery-9.png';
 export { default as Gallery10 } from '../assets/images/gallery/gallery-10.png';
+
+export { default as Special1 } from '../assets/images/special/special-1.png';
+export { default as Special2 } from '../assets/images/special/special-2.png';
+
+export { default as Popular1 } from '../assets/images/popular/popular-1.png';
+export { default as Popular2 } from '../assets/images/popular/popular-2.png';
+export { default as Popular3 } from '../assets/images/popular/popular-3.png';

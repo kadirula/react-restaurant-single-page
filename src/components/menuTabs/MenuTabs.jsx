@@ -1,3 +1,4 @@
+import React from 'react';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
@@ -52,28 +53,28 @@ const MenuTabs = () => {
                 </div>
               </Fade>
               <div className="menu-list__wrapper">
-                {menuTabPanel.items.map(item => (
-                  <Fade bottom>
-                    <div className='menu-list__item'>
-                      <div className="menu-list__image">
-                        <img src={item.image} alt="" />
-                      </div>
-                      <div className="menu-list__info">
-                        <div className="menu-list__info-flex">
-                          <div className="menu-list__title">{item.title}</div>
-                          <div className="menu-list__price">{item.price}</div>
+                {menuTabPanel.items.map((item, index) => (
+                  <React.Fragment key={index}>
+                    <Fade bottom>
+                      <div className='menu-list__item'>
+                        <div className="menu-list__image">
+                          <img src={item.image} alt="" />
                         </div>
-                        <div className="menu-list__desc">
-                          {item.desc}
+                        <div className="menu-list__info">
+                          <div className="menu-list__info-flex">
+                            <div className="menu-list__title">{item.title}</div>
+                            <div className="menu-list__price">{item.price}</div>
+                          </div>
+                          <div className="menu-list__desc">
+                            {item.desc}
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </Fade>
+                    </Fade>
+                  </React.Fragment>
                 ))}
               </div>
-
             </div>
-
           </MenuTabPanel>
         ))
       }

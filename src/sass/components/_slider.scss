@@ -34,7 +34,7 @@
         padding: 2rem 4rem;
         position: relative;
         z-index: 2;
-        max-width: 700px;
+        max-width: 70rem;
         text-align: center;
         background: rgba($color-black, 0.4);
     }
@@ -68,11 +68,15 @@
         background-color: $color-theme;
         width: 5rem;
         height: 5rem;
+        @include tablet(){
+            display: none;
+        }
         &::after {
             font-size: 2rem;
             color: $color-text;
             font-weight: 600;
         }
+        
     }
     .swiper-button-prev {
         left: 0;

@@ -1,4 +1,6 @@
 import { Fade } from 'react-reveal';
+import { Link } from "react-scroll";
+import { Popular1, Popular2, Popular3 } from '../../utils/imageImport';
 
 const PopularMenuItems = () => {
     return (
@@ -7,7 +9,7 @@ const PopularMenuItems = () => {
             <Fade left>
                 <div className="pm-card__item">
                     <div className="pm-card__image">
-                        <img src="http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/special-menu-img1.jpg" alt="" />
+                        <img src={Popular1} alt="Popular" />
                     </div>
                     <div className="pm-card__info">
                         <div className="pm-card__price">
@@ -19,7 +21,9 @@ const PopularMenuItems = () => {
                         <div className="pm-card__desc">
                             Tomato, Fresh Milk, Potatos Lorem Ipsum Is Simply Dummy Text
                         </div>
-                        <a href='/' className="button button--dark">Order Now</a>
+                        <Link className="button button--dark" smooth spy to="delicious">
+                            View Menu
+                        </Link>
                     </div>
                 </div>
             </Fade>
@@ -27,7 +31,7 @@ const PopularMenuItems = () => {
             <Fade bottom>
                 <div className="pm-card__item">
                     <div className="pm-card__image">
-                        <img src="http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/special-menu-img1.jpg" alt="" />
+                        <img src={Popular2} alt="Popular" />
                     </div>
                     <div className="pm-card__info">
                         <div className="pm-card__price">
@@ -39,7 +43,9 @@ const PopularMenuItems = () => {
                         <div className="pm-card__desc">
                             Tomato, Fresh Milk, Potatos Lorem Ipsum Is Simply Dummy Text
                         </div>
-                        <a href='/' className="button button--dark">Order Now</a>
+                        <Link className="button button--dark" smooth spy to="delicious">
+                            View Menu
+                        </Link>
                     </div>
 
                 </div>
@@ -48,7 +54,7 @@ const PopularMenuItems = () => {
             <Fade right>
                 <div className="pm-card__item">
                     <div className="pm-card__image">
-                        <img src="http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/special-menu-img1.jpg" alt="" />
+                        <img src={Popular3} alt="Popular" />
                     </div>
                     <div className="pm-card__info">
                         <div className="pm-card__price">
@@ -60,12 +66,14 @@ const PopularMenuItems = () => {
                         <div className="pm-card__desc">
                             Tomato, Fresh Milk, Potatos Lorem Ipsum Is Simply Dummy Text
                         </div>
-                        <a href='/' className="button button--dark">Order Now</a>
+                        <Link className="button button--dark" smooth spy to="delicious">
+                            View Menu
+                        </Link>
                     </div>
 
                 </div>
             </Fade>
-            
+
         </div>
     )
 }

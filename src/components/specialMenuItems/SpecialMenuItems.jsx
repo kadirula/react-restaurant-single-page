@@ -1,11 +1,13 @@
 import { Fade } from 'react-reveal';
+import { Link } from "react-scroll";
+import { Special1, Special2 } from '../../utils/imageImport';
 
 const SpecialMenuItems = () => {
     return (
         <div className="menu-card">
             <Fade left>
-                <div className="menu-card__item">
-                    <img src="http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/special-menu-img1.jpg" alt="" />
+                <div className="menu-card__item menu-card__item--image">
+                    <img src={Special1} alt="Special" />
                 </div>
             </Fade>
             <Fade top>
@@ -24,15 +26,15 @@ const SpecialMenuItems = () => {
                         <div className="menu-card__desc">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, reiciendis quis! Nemo odit pariatur numquam neque, corporis ipsa maiores tenetur porro nam? Asperiores quo cum, reprehenderit ea incidunt aut illo nisi rerum libero, enim maiores!
                         </div>
-                        <a href="/" className="button">
-                            Order Now
-                        </a>
+                        <Link className="button" smooth spy to="delicious">
+                            View Menu
+                        </Link>
                     </div>
                 </div>
             </Fade>
             <Fade right>
-                <div className="menu-card__item">
-                    <img src="http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/special-menu-img2.jpg" alt="" />
+                <div className="menu-card__item menu-card__item--image">
+                <img src={Special2} alt="Special" />
                 </div>
             </Fade>
         </div>

@@ -4,6 +4,9 @@
     &__poster {
         width: 40rem;
         height: 45rem;
+        @include mobile(){
+            display: none;
+        }
         img {
             width: 100%;
             height: 100%;

@@ -9,6 +9,7 @@ const MenuTabPanel = (props) => {
             id={`simple-tabpanel-${index}`}
             aria-labelledby={`simple-tab-${index}`}
             {...other}
+            key={index}
         >
             {value === index && (
                 <Box sx={{ p: 3 }}>

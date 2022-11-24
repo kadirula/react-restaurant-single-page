@@ -13,7 +13,7 @@ const Gallery = () => {
   return (
     <>
       <Grid container maxWidth='lg' mx='auto' spacing={2}>
-        <Grid item md={12} >
+        <Grid item xs={12} >
 
           <Fade top ssrFadeout>
             <Heading

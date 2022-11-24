@@ -7,6 +7,9 @@
         padding: 1rem 3rem;
         margin: 0 1rem;
         letter-spacing: .3rem;
+        @include mobile(){
+            margin: 0 .3rem;
+        }
     }
     .Mui-selected{  
         background-color: $color-theme;

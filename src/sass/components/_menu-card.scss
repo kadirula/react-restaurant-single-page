@@ -1,11 +1,21 @@
 .menu-card {
     @include flex(center, unset);
     gap: 3rem;
-
+    @include mobile(){
+        flex-direction: column;
+    }
     &__item {
         position: relative;
         width: 33.3%;
-        height: 600px;
+        height: 60rem;
+        @include mobile() {
+            width: 100%;
+        }
+        &--image{
+            @include mobile() {
+                display: none;
+            } 
+        }
         &--flex {
             position: relative;
             @include flex(center, center);

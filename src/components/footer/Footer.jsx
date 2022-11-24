@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <footer className='footer'>
             <Grid container maxWidth='lg' mx='auto' spacing={2}>
-                <Grid item md={12} >
+                <Grid item xs={12}>
 
                     <Fade top>
                         <Heading

@@ -10,6 +10,9 @@
         margin: 0 auto;
         @include flex(center, space-between);
         border: .2rem solid $color-light-gray;
+        @include mobile(){
+            max-width: 35rem;
+        }
         input{
             width: 100%;
             padding: 1.5rem 1rem;
