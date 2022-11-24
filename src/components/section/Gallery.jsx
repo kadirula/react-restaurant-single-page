@@ -2,7 +2,8 @@ import Grid from '@mui/material/Grid';
 import { useState } from 'react';
 import { galleries } from '../../data';
 import { motion, AnimatePresence } from "framer-motion";
-import { GalleryFilter, GalleryItem } from '../index';
+import { GalleryFilter, GalleryItem, Heading } from '../index';
+import { Fade } from 'react-reveal';
 
 const Gallery = () => {
 
@@ -10,13 +11,17 @@ const Gallery = () => {
   const [galleryData, setGalleryData] = useState(galleries);
 
   return (
-    <div className='section section-gallery'>
+    <>
       <Grid container maxWidth='lg' mx='auto' spacing={2}>
         <Grid item md={12} >
-          <div className="heading">
-            <span>Fresh & healthy food</span>
-            <h3>Gallery</h3>
-          </div>
+
+          <Fade top ssrFadeout>
+            <Heading
+              subtitle="Fresh & healthy food"
+              title="Gallery"
+            />
+          </Fade>
+
           <div className="gallery">
             <GalleryFilter
               galleries={galleries}
@@ -39,9 +44,11 @@ const Gallery = () => {
                       key={index}
                       data-filter={galleryItem.filters.join(',')}
                     >
-                      <GalleryItem
-                        img={galleryItem.img}
-                      />
+                      <Fade bottom>
+                        <GalleryItem
+                          img={galleryItem.img}
+                        />
+                      </Fade>
                     </motion.div>
                   ))
                 }
@@ -50,7 +57,7 @@ const Gallery = () => {
           </div>
         </Grid>
       </Grid>
-    </div>
+    </>
   )
 }
 

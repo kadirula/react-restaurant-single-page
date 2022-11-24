@@ -30,6 +30,7 @@
     &__logo {
         font-family: "Allura", cursive;
         font-size: 4rem;
+        cursor: pointer;
         color: $color-theme;
     }
     &__menu {
@@ -40,9 +41,13 @@
             text-transform: uppercase;
             font-weight: 500;
             color: $color-text;
+            cursor: pointer;
             letter-spacing: 0.3rem;
             text-shadow: 4px 3px 5px $color-theme;
             transition: all 0.4s;
+            &.active{
+                color: $color-theme; 
+            }
             &:hover {
                 color: $color-theme;
             }

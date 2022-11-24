@@ -23,28 +23,28 @@
         }
     }
 
-    &--text &__item {
+    &__item {
         background: $color-dark-gray;
         text-align: center;
         overflow: hidden;
     }
-    &--text &__info {
+    &__info {
         padding: 0 3rem;
         position: relative;
         z-index: 5;
     }
-    &--text img {
+    img {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
-    &--text &__title {
+    &__title {
         font-size: 3.5rem;
         color: $color-text;
         font-weight: 600;
         text-transform: uppercase;
     }
-    &--text &__discount {
+    &__discount {
         background-color: $color-theme;
         display: inline-block;
         padding: 1rem 2rem;
@@ -53,7 +53,7 @@
         font-size: 2rem;
         color: $color-dark-gray;
     }
-    &--text &__price {
+    &__price {
         @include flex(center, center);
         font-size: 3rem;
         color: $color-theme;
@@ -64,7 +64,7 @@
             text-decoration: line-through;
         }
     }
-    &--text &__desc {
+    &__desc {
         margin: 2rem 0;
         font-size: 1.7rem;
         line-height: 1.6;
