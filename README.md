@@ -1,6 +1,6 @@
 # React - Restaurant Single Page
 
-Click to view live demo [Country Covid19 Statistic](https://react-restaurant-single-page.netlify.app/).
+Click to view live demo [Restaurant Single Page](https://react-restaurant-single-page.netlify.app/).
 
 ## Dependencies
 
