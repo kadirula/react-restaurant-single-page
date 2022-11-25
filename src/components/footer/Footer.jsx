@@ -1,6 +1,5 @@
 import Grid from '@mui/material/Grid';
 import { Subscribe, Social, Heading } from '../index'
-import { Fade } from 'react-reveal';
 
 
 
@@ -9,13 +8,10 @@ const Footer = () => {
         <footer className='footer'>
             <Grid container maxWidth='lg' mx='auto' spacing={2}>
                 <Grid item xs={12}>
-
-                    <Fade top>
-                        <Heading
-                            subtitle="Be updated"
-                            title="Subscribe Us"
-                        />
-                    </Fade>
+                    <Heading
+                        subtitle="Be updated"
+                        title="Subscribe Us"
+                    />
 
                     <Subscribe />
 

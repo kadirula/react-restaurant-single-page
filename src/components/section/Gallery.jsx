@@ -3,7 +3,6 @@ import { useState } from 'react';
 import { galleries } from '../../data';
 import { motion, AnimatePresence } from "framer-motion";
 import { GalleryFilter, GalleryItem, Heading } from '../index';
-import { Fade } from 'react-reveal';
 
 const Gallery = () => {
 
@@ -15,12 +14,10 @@ const Gallery = () => {
       <Grid container maxWidth='lg' mx='auto' spacing={2}>
         <Grid item xs={12} >
 
-          <Fade top ssrFadeout>
-            <Heading
-              subtitle="Fresh & healthy food"
-              title="Gallery"
-            />
-          </Fade>
+          <Heading
+            subtitle="Fresh & healthy food"
+            title="Gallery"
+          />
 
           <div className="gallery">
             <GalleryFilter
@@ -44,11 +41,9 @@ const Gallery = () => {
                       key={index}
                       data-filter={galleryItem.filters.join(',')}
                     >
-                      <Fade bottom>
-                        <GalleryItem
-                          img={galleryItem.img}
-                        />
-                      </Fade>
+                      <GalleryItem
+                        img={galleryItem.img}
+                      />
                     </motion.div>
                   ))
                 }
