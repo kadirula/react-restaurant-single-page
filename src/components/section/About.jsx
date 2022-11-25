@@ -71,7 +71,7 @@ const About = () => {
                         className='about-card'
                         initial={"offscreen"}
                         whileInView={"onscreen"}
-                        viewport={{ once: true, amount: 0.3 }}
+                        viewport={{ once: false, amount: 0.3 }}
                         transition={{ staggerChildren: 0.3 }}
                         variants={aboutCardAnimate}
                     >

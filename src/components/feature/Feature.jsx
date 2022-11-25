@@ -20,7 +20,7 @@ const Feature = () => {
         <motion.div className="feature-card"
             initial={"offscreen"}
             whileInView={"onscreen"}
-            viewport={{ once: true, amount: 0.3 }}
+            viewport={{ once: false, amount: 0.3 }}
             transition={{ staggerChildren: 0.3 }}
         >
             <motion.div
